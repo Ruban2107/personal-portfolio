@@ -26,6 +26,9 @@
             border-radius: 50%;
             margin-bottom: 20px;
             border: 3px solid #fff;
+            width: 180px; /* Keep image size fixed */
+            height: 180px; /* Fixed height as well */
+            object-fit: cover;
         }
 
         .header .lead {
@@ -180,11 +183,32 @@
             .card {
                 margin-bottom: 20px;
             }
+
+            .header img {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
+        }
+
+        /* Navbar Fix */
+        @media (max-width: 768px) {
+            .navbar .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .navbar-toggler {
+                border: none;
+            }
+
+            .navbar-collapse {
+                flex-grow: 0;
+            }
         }
     </style>
 </head>
@@ -193,7 +217,7 @@
 
     <header class="header">
         <div class="container">
-            <img src="photo.jpg" alt="Ruban Thirukumaran" class="rounded-circle mb-3" width="180">
+            <img src="photo.jpg" alt="Ruban Thirukumaran" class="rounded-circle mb-3">
             <h1>Ruban Thirukumaran</h1>
             <p class="lead">
                 Full Stack Developer | IT Educator | YouTuber | Passionate About Building Scalable, Secure API Solutions
@@ -208,18 +232,23 @@
         </div>
     </header>
 
-    <div class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#certifications">Certifications & Awards</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#certifications">Certifications & Awards</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
 
     <section id="about" class="section bg-light">
         <div class="container">
@@ -367,6 +396,7 @@
         </div>
     </section>
 
+   
     <footer>
         <p>&copy; 2025 Ruban Thirukumaran. All Rights Reserved.</p>
     </footer>
