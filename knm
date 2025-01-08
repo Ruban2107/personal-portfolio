@@ -145,11 +145,11 @@
             }
 
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .header .lead {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
 
             .section {
@@ -158,27 +158,6 @@
 
             .contact-form button {
                 width: 100%;
-            }
-
-            .nav-links {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-links a {
-                padding: 8px 0;
-                text-align: center;
-                width: 100%;
-            }
-
-            .skills ul,
-            .experience ul {
-                padding-left: 20px;
-            }
-
-            .card {
-                margin-bottom: 20px;
             }
         }
 
