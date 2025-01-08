@@ -129,6 +129,16 @@
             color: #007bff;
         }
 
+        .nav-links a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
         @media (max-width: 768px) {
             .header {
                 padding: 50px 0;
@@ -149,6 +159,11 @@
             .contact-form button {
                 width: 100%;
             }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -171,6 +186,19 @@
             </div>
         </div>
     </header>
+
+    <div class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#certifications">Certifications & Awards</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
 
     <section id="about" class="section bg-light">
         <div class="container">
@@ -209,79 +237,120 @@
     <section id="experience" class="section bg-light">
         <div class="container">
             <h2 class="text-center">Professional Experience</h2>
-            <!-- Teddlo -->
             <div class="card p-4 mb-4">
                 <h3>Full Stack Developer Intern, Teddlo, Ireland</h3>
                 <p><strong>June 2024 – August 2024</strong></p>
                 <ul>
-                    <li>Configured and deployed WordPress instances using AWS CloudFormation.</li>
-                    <li>Implemented auto-scaling for WordPress using AWS Lambda and CloudWatch.</li>
+                    <li>Configured and deployed live and development/testing WordPress instances using AWS CloudFormation, ensuring environment separation and scalability.</li>
+                    <li>Implemented auto-scaling and automated shutdown for WordPress instances using AWS Lambda and CloudWatch, with health monitoring through Route 53 for high availability.</li>
                 </ul>
             </div>
-
-            <!-- Torry Harris -->
             <div class="card p-4 mb-4">
                 <h3>Software Engineer, Torry Harris Integration Solutions (Client: British Telecom), India</h3>
-                <p><strong>October 2021 - January 2024</strong></p>
+                <p><strong>October 2021 – January 2024</strong></p>
                 <ul>
-                    <li>Developed scalable APIs using JavaScript, Node.js, and API Gateway (APIGEE).</li>
-                    <li>Worked on cloud migration to hybrid environments focusing on scalability.</li>
-                    <li>Received "Spot Excellence Award" for outstanding API solutions delivery.</li>
+                    <li>Developed and deployed scalable APIs using JavaScript, Node.js, Java, and API Gateway (API Gateway), ensuring seamless integration with microservices architecture.</li>
+                    <li>Managed the migration of on-premises systems to a hybrid cloud environment, enhancing scalability, security, and addressing complex technical challenges through cloud migration and performance optimizations.</li>
+                    <li>Worked as a designer and developer within the squad, serving as the dedicated point of contact, leading issue resolution calls, raising requests to the DevOps team for test and production support, providing design walkthroughs, and coordinating production slot bookings for timely delivery.</li>
+                    <li>Part of the security defect team, identifying and fixing code issues. Implemented SonarQube for code quality checks, wrote automated tests with Mocha and Chai, integrated Postman and JUnit for API delivery, used Cucumber and Gherkin for BDD, and tracked resolutions using ALM.</li>
                 </ul>
             </div>
-
-            <!-- Exposys Data Lab -->
             <div class="card p-4 mb-4">
-                <h3>Software Developer Intern, Exposys Data Lab, India</h3>
-                <p><strong>June 2023 – August 2023</strong></p>
+                <h3>Web Development Intern, Exposys Data Labs, India</h3>
+                <p><strong>October 2020 – January 2021</strong></p>
                 <ul>
-                    <li>Developed RESTful APIs using Java and Spring Boot to integrate with data pipelines.</li>
-                    <li>Improved application performance by optimizing database queries using SQL and indexing.</li>
-                    <li>Collaborated with Data Science teams to implement ML model APIs.</li>
+                    <li>Contributed to the development of a web application using HTML, CSS, Angular, and MySQL, helping streamline the management of client data, project tasks, and meetings to enhance operational efficiency.</li>
+                    <li>Participated in the development process using Agile methodologies in Jira and assisted with source code management through Git/GitHub, contributing to timely project delivery and effective team collaboration.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section">
+    
+    <section id="certifications" class="section">
         <div class="container">
-            <h2 class="text-center">Education</h2>
+            <h2 class="text-center">Certifications & Awards</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Bachelor of Engineering in Computer Science</h3>
-                    <p>Bangalore, India | Aug 2017 – Aug 2021</p>
+                    <div class="card p-4 mb-4">
+                        <h3>AWS Certified Solutions Architect – Associate</h3>
+                        <p><strong>Issued by:</strong> Simplilearn</p>
+                        <p><strong>Date:</strong> June 2024 – Aug 2024</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Master of Science in Cloud Computing (2:1)</h3>
-                    <p>Dublin, Ireland | Jan 2024 – Jan 2025</p>
-                    <p>Project Thesis: <a href="https://youtu.be/5GxK91eDnJo" target="_blank">Optimizing Multi-Cloud Deployment for Microservices</a></p>
+                    <div class="card p-4 mb-4">
+                        <h3>Masters Full Stack Java Program</h3>
+                        <p><strong>Issued by:</strong> SimpliLearn</p>
+                        <p><strong>Date:</strong> Sept 2024 – May 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 mb-4">
+                        <h3>Spot Excellence Award</h3>
+                        <p><strong>Issued by:</strong> Torry Harris Integration Solutions</p>
+                        <p><strong>Date:</strong> January 2023</p>
+                        <p><strong>Description:</strong> Awarded for high-quality work under tight deadlines.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="education" class="section bg-light">
         <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <p class="text-center">If you have a job opportunity or collaboration in mind, please reach out to me using the form below:</p>
-            <div class="contact-form">
-                <form action="mailto:ruban.thiru21@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            <h2 class="text-center">Education</h2>
+            <ul>
+                <li><strong>Bachelor of Engineering in Computer Science</strong> – Bangalore, India, Aug 2017 – Aug 2021</li>
+                <li><strong>Master of Science in Cloud Computing (2:1)</strong> – Dublin, Ireland, Jan 2024 – Jan 2025</li>
+            </ul>
+            <p><strong>Modules:</strong> Cloud DevOps, Scalable Cloud Programming, Machine Learning, Cloud Architectures, Fog & Edge Computing</p>
+            <p><strong>Project Thesis:</strong> Optimizing Multi-Cloud Deployment for Microservices Using a Greedy Selection Strategy</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Looking for New Opportunities</h2>
+            <p class="text-center">I am currently seeking new career opportunities and would love to connect with recruiters and hiring managers. If you're interested in discussing potential job roles, please feel free to reach out to me directly. I am open to exciting challenges and growth in my career.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Contact Form -->
+                    <form action="mailto:ruban.thiru21@gmail.com" method="POST" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <!-- Contact Info -->
+                    <div class="mt-4">
+                        <h5>Alternatively, you can reach me directly at:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-phone-alt"></i> <a href="tel:+3530899594077">+353 089 959 4077</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:ruban.thiru21@gmail.com">ruban.thiru21@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Ruban Thirukumaran. All rights reserved. | Developed with ❤️</p>
+        <p>© 2025 Ruban Thirukumaran. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
+
